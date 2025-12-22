@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        .button{
+            background-color: rgb(146, 146, 231);
+            border: 0;
+            padding: 10px;
+        }
+        .button:hover{
+            background-color: rgb(220, 230, 93);
+        }
+        .button:active{
+            background-color: brown;
+        }
+        input:focus{
+            background-color: blueviolet;
+        }
+        .container .item:first-child{
+            background-color: rgb(11, 128, 230);
+        } 
+        .container .item:last-child{
+            background-color: rgb(124, 224, 10);
+         } 
+        .container .item:nth-child{
+            background-color: rgb(11, 219, 28);
+        }
+        .container .item:nth-child{
+            background-color: rgb(235, 16, 89);
+        }
+              
+        </style>
+</head>
+<body>
+    <!-- วาง คลิ้ก -->
+     <input type="text">
+    <button class="button">Normal Button</button>
+
+    <div class="container">
+        <div class ="item">1</div>
+        <div class ="item">2</div>
+        <div class ="item">3</div>
+        <div class ="item">4</div>
+        <div class ="item">5</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: blue;
+        }
+        .container .item{
+            background-color: rgb(0, 195, 255);
+        }
+        .button{
+            background-color: green;
+            border: 0px;
+            padding: 10px;
+        }
+        .button-active{
+            background-color: red;
+            border: 10px;
+        }
+        .button-danger{
+            background-color: rgb(255, 0, 157);
+        }
+        .item1 + .item2{
+            background-color: thistle;
+        }
+    </style>
+</head>
+<body>
+    <!--item เป็นลูกค้าของ container-->
+    <div class = "container">
+        container
+        <div class="item">
+            Item 1
+        </div>
+    <!--item เป็นลูกค้า container แค้ชั้นเดียว-->    
+    <div class="main-container">
+        container
+      <div class="item">
+            Item 
+         </div>  
+         <div class="item">
+            Item 1
+         </div>
+         <div class="item">
+            Item 2
+         </div>
+         <div class="item">
+            Item 3
+         </div>
+    </div>
+
+    <button class="button">Click Me</button>
+    <button class="button-active">Click Me</button>
+    <button class="button-danger">Click Me</button>
+
+    <div class ="item1">item1</div>
+    <div class ="item2">item2</div>
+
+    <input type="text" name="firstname">
+    
+</body>
+</html>

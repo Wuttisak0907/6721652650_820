@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="radio"name="gender" value="male"onchange="changeGender()"checked="true">Male
+    <input type="radio"name="gender" value="female"onchange="changeGender()">Female
+
+    <script>
+        //let inputsDom = document.getElementsByClassName("input");
+        //console.log(inputsDom);
+        //for (let i = 0; i < inputsDom.length; i++) {
+            //console.log(inputsDom[i].value);
+        //}
+        //let fname = document.querySelector('.input[name="fname"]');
+        //console.log(fname.value);
+
+        //let checkboxes = document.querySelectorAll('input[name="hobby"]');
+        //for(let i =0; i < checkboxes.length; i++) {
+            //console.log(checkboxes[i].value);
+        //}
+    //Onclick Event Example
+        //function userClick() {
+            //console.log("Button Clicked");
+        //}  
+        //function divClick() {
+            //console.log("Div Clicked");
+        //}
+    //Onchange Event Example
+        function changeGender(){
+            //เลือก Gender ทุกอ input ออกมา
+            let gendersInputs = document.querySelectorAll('input[name="gender"]');
+        
+            //ใคร checkd อยู่ = เพศโดนเลือกอยู่
+            for (let i = 0; i < gendersInputs.length; i++) {
+                if (gendersInputs[i].checked) {
+                    console.log("Gender selected: " + gendersInputs[i].value);
+                }
+            }
+        }
+    </script>
+</body>
+</html>         

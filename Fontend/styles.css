@@ -1,0 +1,175 @@
+/* ===============================
+   Apple Ultra Minimal Big Type
+================================ */
+
+* {
+  box-sizing: border-box;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "SF Pro Display",
+    "SF Pro Text",
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #1d1d1f;
+}
+
+/* ===== Container ===== */
+.container {
+  max-width: 440px;
+  margin: 100px auto;
+  padding: 0 22px;
+}
+
+/* ===== Header ===== */
+.header {
+  font-size: 42px;              /* ⬅ ใหญ่ โหด */
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: -1.2px;       /* Apple มาก */
+  line-height: 1.2;
+  margin-bottom: 90px;
+}
+
+/* ===== Form spacing ===== */
+.form-input {
+  margin-bottom: 44px;          /* โล่งขึ้น */
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* ===== Labels ===== */
+.header-form,
+.form-input {
+  font-size: 14px;
+  color: #86868b;
+  margin-bottom: 10px;
+  letter-spacing: 0.2px;
+}
+
+/* ===== Inputs ===== */
+.form,
+textarea {
+  width: 100%;
+  padding: 18px 18px;           /* input ใหญ่ */
+  font-size: 18px;              /* ⬅ ตัวพิมพ์ใหญ่ อ่านสบาย */
+  font-weight: 400;
+  background: transparent;
+  border-radius: 16px;
+  border: 1px solid #d2d2d7;
+  color: #1d1d1f;
+  transition: all 0.35s ease;
+}
+
+textarea {
+  resize: none;
+  min-height: 110px;
+}
+
+.form::placeholder,
+textarea::placeholder {
+  color: #c7c7cc;
+}
+
+/* ===== Focus (Luxury Apple) ===== */
+.form:focus,
+textarea:focus {
+  outline: none;
+  border-color: #000;
+  box-shadow:
+    0 0 0 1px rgba(0,0,0,0.25),
+    0 20px 40px rgba(0,0,0,0.12);
+  transform: translateY(-2px);
+}
+
+/* ===== Radio / Checkbox ===== */
+input[type="radio"],
+input[type="checkbox"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #d2d2d7;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="checkbox"] {
+  border-radius: 5px;
+}
+
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+  border-color: #000;
+}
+
+input[type="radio"]:checked::after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input[type="checkbox"]:checked::after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gender .flex div,
+.form-input div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;              /* ⬅ ใหญ่ขึ้น */
+  color: #1d1d1f;
+}
+
+/* ===== Button ===== */
+.center {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.button {
+  width: 100%;
+  padding: 20px 0;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 999px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+.button:hover {
+  background: #1d1d1f;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  transform: scale(0.97);
+}

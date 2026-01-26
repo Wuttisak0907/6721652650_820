@@ -1,0 +1,33 @@
+//swo all
+docker ps--all
+
+//Show just runing conainers
+docker ps
+
+//stop conta
+docker stop<con id>
+
+//start a conainers
+docker start <conainers>
+
+//remove a conainers
+docker rm <conainers>
+
+//remove all < conainers>
+docker system prune
+
+//nginx server
+docker run nginx
+
+// sh conainers
+docker run <imamge name pr conainers_id > sh
+
+//cat 
+cat filename.txt
+
+//forground mode
+docker run -p 80:80 nginx
+docker run -p 9000:80 nginx
+
+//detached mode
+docker run -d -p 9100:80 nginx

@@ -174,11 +174,11 @@ input[type="checkbox"]:checked::after {
   transform: scale(0.97);
 }
 .message {
-  background-color: #000;
+  background-color: #f7dddd;
     margin-top: 20px;
     font-size: 16px;
     color: #1d1d1f;
-    border: 6px solid #000;
+    border: 6px solid #fcfcfc;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -187,6 +187,6 @@ input[type="checkbox"]:checked::after {
     color: white;
 } 
 .message.error {
-    background-color: #f44336;
+    background-color: #0f0f0f;
     color: white;
 } 
